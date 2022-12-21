@@ -1,28 +1,26 @@
 {
   "name": "anonynamer",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Anonymizer generating fake identities from keys",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "author": "Gling team",
-  "keywords": ["anonymizer", "identity", "incognito", "anonymous", "anonymously", "pseudo", "pseudonym", "pseudonymsly", "name", "nameless", "namelessly"],
+  "author": "",
+  "keywords": [],
   "scripts": {
     "lint": "tslint -p tsconfig.json",
     "format": "prettier --write \"src/**/*.ts\"",
     "test": "jest --config jestconfig.json",
     "build": "tsc",
-    "prepare" : "npm run build",
-    "prepublishOnly" : "npm test && npm run lint",
-    "preversion" : "npm run lint",
-    "version" : "npm run format && git add -A src",
-    "postversion" : "git push && git push --tags"
+    "prepare": "npm run build",
+    "prepublishOnly": "npm test && npm run lint",
+    "preversion": "npm run lint",
+    "version": "npm run format && git add -A src",
+    "postversion": "git push && git push --tags"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Gling-bet/anonynamer.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Gling-bet/anonynamer/issues"
