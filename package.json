@@ -1,11 +1,24 @@
 {
   "name": "anonynamer",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Anonymizer generating fake identities from keys",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "author": "Gling team",
-  "keywords": ["anonymizer", "anonymize", "identity", "incognito", "anonymous", "anonymously", "pseudo", "pseudonym", "pseudonymsly", "name", "nameless", "namelessly"],
+  "keywords": [
+    "anonymizer",
+    "anonymize",
+    "identity",
+    "incognito",
+    "anonymous",
+    "anonymously",
+    "pseudo",
+    "pseudonym",
+    "pseudonymsly",
+    "name",
+    "nameless",
+    "namelessly"
+  ],
   "scripts": {
     "lint": "tslint -p tsconfig.json",
     "format": "prettier --write \"src/**/*.ts\"",
