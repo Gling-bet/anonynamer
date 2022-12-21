@@ -4,8 +4,8 @@
   "description": "Anonymizer generating fake identities from keys",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "author": "",
-  "keywords": [],
+  "author": "Gling team",
+  "keywords": ["anonymizer", "anonymize", "identity", "incognito", "anonymous", "anonymously", "pseudo", "pseudonym", "pseudonymsly", "name", "nameless", "namelessly"],
   "scripts": {
     "lint": "tslint -p tsconfig.json",
     "format": "prettier --write \"src/**/*.ts\"",
