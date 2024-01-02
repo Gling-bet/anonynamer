@@ -3,11 +3,11 @@ import { FIRSTNAMES } from './firstnames';
 import { NICKNAMES } from './nicknames';
 import { LASTNAMES } from './lastnames';
 
-const anonyname = (key: string) => {
-  const keyIndex = BigInt(`0x${SHA1(key)}`);
-  const firstname = FIRSTNAMES[Number(keyIndex % BigInt(FIRSTNAMES.length))];
-  const nickname = NICKNAMES[Number(keyIndex % BigInt(NICKNAMES.length))];
-  const lastname = LASTNAMES[Number(keyIndex % BigInt(LASTNAMES.length))];
+const anonyname = (seedPhrase: string) => {
+  const seedPhraseIndex = BigInt(`0x${SHA1(seedPhrase)}`);
+  const firstname = FIRSTNAMES[Number(seedPhraseIndex % BigInt(FIRSTNAMES.length))];
+  const nickname = NICKNAMES[Number(seedPhraseIndex % BigInt(NICKNAMES.length))];
+  const lastname = LASTNAMES[Number(seedPhraseIndex % BigInt(LASTNAMES.length))];
   return `${firstname} "${nickname}" ${lastname}`;
 };
 

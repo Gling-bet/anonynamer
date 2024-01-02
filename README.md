@@ -5,7 +5,7 @@ This pseudo-identity is composed by three parts : Firstname "Nickname" Lastname.
 
 ## Quickstart
 
-To create a pseudo-identity from a key...
+To create a pseudo-identity from a seed phrase...
 
 **1. Install**
 
@@ -16,11 +16,11 @@ npm install anonynamer
 **2. Create a pseudo-identity**
 ```javascript
 import anonyname from "anonynamer";
-anonyname('theKey'); // => Jordea "Kuchen" Hinrichs 
+anonyname('the seed phrase'); // => Theophile "Toritama" Brodzik
 ```
 
-The same key will always return the same result, allowing a durability during the time. 
-By design, it impossible to retrieve the key from a result.
+The same seed phrase will always return the same result, allowing a durability during the time. 
+By design, it impossible to retrieve the seed phrase from a result.
 
 ## How it works
 
